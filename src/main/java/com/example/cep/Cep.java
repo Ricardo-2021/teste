@@ -15,28 +15,24 @@ public class Cep {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;	
 	@Column(nullable = false)
-	private String cidade;
+	private String imovel;
 	@Column(nullable = false)
-	private String numeroCep;
+	private String valorContato;
 	@Column(nullable = false)
-	private String rua;
-	@Column(nullable = false)
-	private String bairro;
-	@Column(nullable = false)
-	private String uf;
+	private String enderecoDisponibilidade;
+
 	
 	public Cep() {
 	}
 
-	public Cep(String cidade, String numeroCep, String rua, String bairro, String uf ) {
+	public Cep(Integer id, String imovel, String valorContato, String enderecoDisponibilidade) {
 		super();
-		this.cidade = cidade;
-		this.numeroCep = numeroCep;
-		this.rua = rua;
-		this.bairro = bairro;
-		this.uf = uf;
+		this.id = id;
+		this.imovel = imovel;
+		this.valorContato = valorContato;
+		this.enderecoDisponibilidade = enderecoDisponibilidade;
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}
@@ -44,51 +40,35 @@ public class Cep {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
-	public String getCidade() {
-		return cidade;
+
+	public String getImovel() {
+		return imovel;
 	}
 
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
+	public void setImovel(String imovel) {
+		this.imovel = imovel;
 	}
 
-	public String getNumeroCep() {
-		return numeroCep;
+	public String getValorContato() {
+		return valorContato;
 	}
 
-	public void setNumeroCep(String numeroCep) {
-		this.numeroCep = numeroCep;
+	public void setValorContato(String valorContato) {
+		this.valorContato = valorContato;
 	}
 
-	public String getRua() {
-		return rua;
+	public String getEnderecoDisponibilidade() {
+		return enderecoDisponibilidade;
 	}
 
-	public void setRua(String rua) {
-		this.rua = rua;
-	}
-
-	public String getBairro() {
-		return bairro;
-	}
-
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
-	}
-
-	public String getUf() {
-		return uf;
-	}
-
-	public void setUf(String uf) {
-		this.uf = uf;
+	public void setEnderecoDisponibilidade(String enderecoDisponibilidade) {
+		this.enderecoDisponibilidade = enderecoDisponibilidade;
 	}
 
 	@Override
 	public String toString() {
-		return "Cep [id=" + id + ", cidade=" + cidade + ", cep=" + numeroCep + ", rua=" + rua + ", bairro=" + bairro + ", uf="
-				+ uf + "]";
+		return "Cep [id=" + id + ", Imovel=" + imovel + ", Contato e valor" + valorContato + ", Endereço e disponibilidade" + enderecoDisponibilidade + "]";
+
 	}	
 
 }

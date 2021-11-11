@@ -39,7 +39,7 @@ public class CepController {
 		return new ResponseEntity<List<Cep>>(cep, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "{numeroCep}", method = RequestMethod.GET)
+	/*@RequestMapping(value = "{numeroCep}", method = RequestMethod.GET)
 	public ResponseEntity<Cep> findByNumeroCep(@PathVariable("numeroCep") String numeroCep) {
 		Cep cep = this.cepRepository.findByNumeroCep(numeroCep);
 		if (cep == null) {
@@ -74,5 +74,5 @@ public class CepController {
 			return new ResponseEntity<Cep>(cepId, HttpStatus.NOT_FOUND);
 		}		
 		return new ResponseEntity<Cep>(cepId, HttpStatus.OK);	
-	}
+	}*/
 }
