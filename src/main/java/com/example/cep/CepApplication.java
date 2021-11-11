@@ -21,12 +21,7 @@ public class CepApplication {
         repository.save(new Cep(4 , "Casa com três dormitórios com uma suite", "Diaria de R$ 150,00 contato (51)998523145","Av. Gravataí, 131, Imbé disponivel janeiro  de 2022"));
         repository.save(new Cep(5 , "Apt com dois dormitórios e com sacada", "Diaria de R$ 100,00 contato (51)973258745","Av. Novo hamburgo, 552, disponivel janeiro e fevereiro de 2022"));
         repository.save(new Cep(6 , "Casa com dois dormitórios, com sacada, garagem para dois carros", "Diaria de R$ 120,00 contato (51)965852321","Av. Assis Brasil, 2525, disponivel janeiro e fevereiro de 2022"));
-     // repository.save(new Cep("Imbé" , "95625000", "Caxias", "Centro", "RS"));
-     // repository.save(new Cep("Porto Alegre" , "91180000", "Baltazar de Oliveira Garcia", "Ruben Berta", "RS" ));
-     // repository.save(new Cep("Alvorada" , "94810002", "Presidente Getulio Vargas", "Centro", "RS" ));
-     // repository.save(new Cep("Porto Alegre" , "91140001", "Sen Salgado Filho", "Centro", "RS" ));
-     // repository.save(new Cep("Viamão" , "94435000", "Batista de Carvalho", "Centro", "SP" ));
-     // repository.save(new Cep("São Paulo" , "05089001", "Guaipá", "Vila Leopoldina", "SP" ));
+   
     };
   }
 }
